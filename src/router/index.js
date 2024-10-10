@@ -3,6 +3,10 @@ import SignIn from '@/views/signIn/SignIn.vue'
 import SignUp from '@/views/signUp/SignUp.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
+
+
+
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -14,12 +18,13 @@ const router = createRouter({
     {
       path: '/sign_in',
       name: 'sign_in',
-      component: SignIn
+      component: () => import('@/views/signIn/SignIn.vue')
+
     },
     {
       path: '/sign_up',
       name: 'sign_up',
-      component: SignUp
+      component: () => import('@/views/signUp/SignUp.vue')
     }
   ]
 })
