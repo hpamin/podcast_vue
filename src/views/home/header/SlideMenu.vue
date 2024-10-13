@@ -34,6 +34,20 @@
                     <i class="pi pi-angle-left"></i>
                     <a href="">Products</a>
                 </div>
+
+
+                <div class="signUp">
+                    
+                    <div class="linkDetailSignIn">
+                        <router-link to="/sign_up" class="btn" id="login">
+                        <i class="pi pi-user-plus"></i>
+                        </router-link>
+                        <router-link to="/sign_in" class="btn" id="login">
+                        <i class="pi pi-sign-in"></i>
+                        </router-link>
+                    </div>
+                    
+                </div>                
             </div>
             
         </div>
@@ -101,10 +115,24 @@
             justify-content: space-between;
         }
         .linkDetail a{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
         .linkDetail:hover{
             opacity: 0.7;
+        }
+        .linkDetailSignIn{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
+        .signUp{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
     }

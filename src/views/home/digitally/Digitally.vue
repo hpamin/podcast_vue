@@ -127,4 +127,10 @@
             font-size: 2rem;
         }
     }
+
+    @media (max-width: 370px) {
+        .digitallyImg img{
+            width: 100%;
+        }
+    }
 </style>

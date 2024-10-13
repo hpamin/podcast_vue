@@ -16,9 +16,9 @@
                 <router-link to="/sign_in" class="btn" id="login">
                     Login
                 </router-link>
-                <button class="btn" id="start">
+                <router-link class="btn" id="start" to="/sign_up">
                     Get Start!
-                </button>
+                </router-link>
             </div>
     
             <div class="links">
@@ -31,6 +31,11 @@
     
             <div class="logo">
                 <p>HP<span>amin</span></p>
+                <div class="MobileSignUp hide">
+                    <router-link to="/sign_in" class="btn" id="login">
+                        <i class="pi pi-sign-in"></i>
+                    </router-link>
+                </div>
             </div>
 
         </div>
@@ -83,11 +88,17 @@ import SlideMenu from './SlideMenu.vue';
         background-color: transparent; 
         color: var(--secondary); 
         font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center
     }
     #start{
         font-size: 1.1rem; 
         background: linear-gradient(180deg, #8E01ED, #A901F7, #D501FF); 
         color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .links{
@@ -108,6 +119,7 @@ import SlideMenu from './SlideMenu.vue';
         justify-content: center;
         align-items: center;
         flex: 1;
+        gap: 10px;
     }
     .logo p{
         color: var(--primary);
@@ -117,11 +129,15 @@ import SlideMenu from './SlideMenu.vue';
     .logo span{
         color: var(--secondary);
     }
-
-
+    
+    
     @media (max-width: 768px) {
         .nav{
             flex-direction: row-reverse;
+        }
+        .navDetails{
+            flex-direction: row-reverse;
+            align-items: center;
         }
         .links{
             display: none;
@@ -149,6 +165,18 @@ import SlideMenu from './SlideMenu.vue';
             position: fixed;
             top: 0;
         }
+        .MobileSignUp {
+            display: block;
+        }
+        #login{
+            font-size: 1rem;
+        }
+        .MobileSignUp{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
     }
    
 </style>

@@ -151,9 +151,6 @@
     .signUp p a{
         color: var(--primary);
     }
-    /* input{
-        width: 350px;
-    } */
 
 
 
@@ -298,14 +295,14 @@
         .signInBtn{
             font-size: 1rem;
         }
+        .signInDetails form{
+            padding: 0 20px;
+        }
         
     }
 
     @media (max-width: 320px) {
         
-        input{
-            width: 270px;
-        }
         .description p:nth-child(1){
             font-size: 2rem;
         }

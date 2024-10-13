@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+a{
+  text-decoration: none;
+}
 :root {
   --primary: #8E01ED;
   --secondary: #000000;
